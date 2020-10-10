@@ -10,6 +10,7 @@ export default function Footer(props){
     console.log(comicsNums)
     return (
         <>
+            <p>Previous 10</p>
             <ul>
                 {comicsNums.map( (comic) =>
                     <Link key={comic} href="/comics/[id].js" as={`/comics/${comic}` }>
@@ -24,7 +25,7 @@ export default function Footer(props){
                 }
             `}
             </style>
-            <p><small>@copyright ASAC</small></p>
+            <p><small>@copyright COMICS</small></p>
         </>
     );
 }
